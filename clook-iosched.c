@@ -1,7 +1,7 @@
 /*
  *   elevator clook
  *
- *   Thalia Maidique PID: **********
+ *   Edited by Andre Marin
  *   COP4610 Lab 4
  *
  *   Only edited the clook_add_request and clook_dispatch functions
@@ -24,7 +24,7 @@ static void clook_merged_requests(struct request_queue *q, struct request *rq,
 	list_del_init(&next->queuelist);
 }
 
-/* Edited this function to add the print statement, which prints out 
+/* Edited this function to add the print statement. It prints out 
    whether the data was being written (W) or read (R)  whenever the
    dispatcher is called.  */
 static int clook_dispatch(struct request_queue *q, int force)
@@ -143,6 +143,6 @@ module_init(clook_init);
 module_exit(clook_exit);
 
 
-MODULE_AUTHOR("Thalia Maidique");
+MODULE_AUTHOR("Andre Marin");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("C-LOOK IO scheduler");
