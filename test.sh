@@ -6,9 +6,9 @@ TESTFILE2=/test/bashtest2
 
 for i in `seq 1 $LISTLEN`
 do
-	echo "YOUR TEST FACE x$i TIMES" >> $TESTFILE
-	echo "ANOTHER TEST x$i" >> $TESTFILE2
-	echo "AHAHAHAHA x$i TIMES" >> $TESTFILE
+	echo "First test: x$i" >> $TESTFILE
+	echo "Second test: x$i" >> $TESTFILE2
+	echo "Third test: x$i" >> $TESTFILE
 done
 
 TESTSIZE=$(stat -c%s "$TESTFILE")
