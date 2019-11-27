@@ -36,10 +36,10 @@ config IOSCHED_CLOOK
 	tristate "Clook I/O scheduler"
 	default y
 	---help---
-	  The deadline I/O scheduler is simple and compact. It will provide
-	  CSCAN service with FIFO expiration of requests, switching to
-	  a new point in the service tree and doing a batch of IO from there
-	  in case of expiry.
+	  The CLOOK I/O scheduler is an enhanced version of LOOK and CSCAN.
+	  It is like CSCAN in that it wraps the tracks as a circular cylinder, 
+	  but it has a better seek time than CSCAN. CLOOK is also used to avoid
+	  starvation and service requests more uniformly.
 
 
 config CFQ_GROUP_IOSCHED
