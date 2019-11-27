@@ -5,7 +5,7 @@
 - * elevator noop
 + *   elevator clook
 + *
-+ *   Thalia Maidique PID: **********
++ *   Edited by Andre Marin
 + *   COP4610 Lab 4
 + *
 + *   Only edited the clook_add_request and clook_dispatch functions
@@ -30,7 +30,7 @@
  }
  
 -static int noop_dispatch(struct request_queue *q, int force)
-+/* Edited this function to add the print statement, which prints out 
++/* Edited this function to add the print statement. It prints out 
 +   whether the data was being written (W) or read (R)  whenever the
 +   dispatcher is called.  */
 +static int clook_dispatch(struct request_queue *q, int force)
@@ -182,7 +182,7 @@
  
  
 -MODULE_AUTHOR("Jens Axboe");
-+MODULE_AUTHOR("Thalia Maidique");
++MODULE_AUTHOR("Andre Marin");
  MODULE_LICENSE("GPL");
 -MODULE_DESCRIPTION("No-op IO scheduler");
 +MODULE_DESCRIPTION("C-LOOK IO scheduler");
